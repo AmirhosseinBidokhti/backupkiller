@@ -25,7 +25,7 @@ func main() {
 	finalGeneratedBackups = append(finalGeneratedBackups, url_url_backup_items...)
 	finalGeneratedBackups = append(finalGeneratedBackups, url_dot_path_backup_item...)
 
-	for _, v := range finalGeneratedBackups {
+	for _, v := range RemoveDuplicateStr(finalGeneratedBackups) {
 		fmt.Println(v)
 
 	}
